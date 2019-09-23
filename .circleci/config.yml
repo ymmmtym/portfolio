@@ -16,7 +16,7 @@ jobs:
       - run:
           name: test2
           command: ls
-              - run:
+      - run:
           name: test3
           command: ls ~
 
