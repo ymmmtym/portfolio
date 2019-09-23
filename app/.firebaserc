@@ -1,0 +1,7 @@
+{
+  "projects": {
+    "default": "test-project-cc4da",
+    "staging": "test-project-cc4da",
+    "portfolio": "test-project-cc4da"
+  }
+}
