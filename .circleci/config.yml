@@ -12,7 +12,7 @@ jobs:
       - checkout
       - run:
           name: list
-          command: ls
+          command: ls ~
 
 workflows:
   version: 2
