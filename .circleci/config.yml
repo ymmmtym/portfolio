@@ -15,7 +15,7 @@ jobs:
           working_directory: app
       - run:
           name: 'Install Dependecies'
-          command: yarn install firebase-tools
+          command: yarn add firebase-tools
       - run:
           name: build
           command: yarn build
