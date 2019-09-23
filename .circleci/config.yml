@@ -16,12 +16,15 @@ jobs:
       - run:
           name: 'Install Dependecies'
           command: yarn add firebase-tools
+          working_directory: app
       - run:
           name: build
           command: yarn build
+          working_directory: app
       - run:
           name: 'Deploy to Hosting'
           command: node_modules/.bin/firebase deploy --only hosting --project "$FIREBASE_PROJECT_ID" --token "$FIREBASE_TOKEN"
+          working_directory: app
 
 
 workflows:
