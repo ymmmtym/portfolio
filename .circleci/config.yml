@@ -7,7 +7,6 @@ executors:
 jobs:
   build:
     executor: node
-    working_directory: ~/app
     steps:
       - checkout
       - run:
