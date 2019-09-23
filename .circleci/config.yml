@@ -1,12 +1,12 @@
 version: 2.1
 executors:
-  node:
+  default:
     docker:
       - image: circleci/node
 
 jobs:
   build:
-    executor: node
+    executor: default
     steps:
       - checkout
       - run:
@@ -14,11 +14,15 @@ jobs:
           command: yarn install
           working_directory: app
       - run:
-          name: yarn install
-          command: ls
+          name: 'Install Dependecies'
+          command: yarn install firebase-tools
       - run:
-          name: test3
-          command: ls ~
+          name: build
+          command: yarn build
+      - run:
+          name: 'Deploy to Hosting'
+          command: node_modules/.bin/firebase deploy --only hosting --project "$FIREBASE_PROJECT_ID" --token "$FIREBASE_TOKEN"
+
 
 workflows:
   version: 2
