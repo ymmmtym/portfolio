@@ -11,7 +11,13 @@ jobs:
     steps:
       - checkout
       - run:
-          name: list
+          name: test1
+          command: pwd
+      - run:
+          name: test2
+          command: ls
+              - run:
+          name: test3
           command: ls ~
 
 workflows:
