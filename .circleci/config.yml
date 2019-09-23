@@ -10,10 +10,11 @@ jobs:
     steps:
       - checkout
       - run:
-          name: test1
-          command: pwd
+          name: yarn install
+          command: yarn install
+          working_directory: app
       - run:
-          name: test2
+          name: yarn install
           command: ls
       - run:
           name: test3
