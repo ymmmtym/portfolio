@@ -22,7 +22,7 @@ workflows:
           filters:
             branches:
               only: develop
-      - deploy:
-          filters:
-            branches:
-              only: master
+      # - deploy:
+      #     filters:
+      #       branches:
+      #         only: master
