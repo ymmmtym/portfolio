@@ -5,19 +5,23 @@ executors:
       - image: circleci/node
 
 jobs:
-  deploy:
+  build:
     executor: node
     working_directory: ~/app
     steps:
       - checkout
       - run:
-          name: yarn install
-          command: yarn install
+          name: list
+          command: ls
 
 workflows:
   version: 2
   deploy_dev:
     jobs:
+      - build:
+          filters:
+            branches:
+              only: develop
       - deploy:
           filters:
             branches:
