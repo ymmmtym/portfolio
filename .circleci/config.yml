@@ -5,7 +5,7 @@ executors:
       - image: circleci/node
 
 jobs:
-  build:
+  deploy:
     executor: default
     steps:
       - checkout
@@ -31,11 +31,7 @@ workflows:
   version: 2
   test:
     jobs:
-      - build:
+      - deploy:
           filters:
             branches:
-              only: develop
-      # - deploy:
-      #     filters:
-      #       branches:
-      #         only: master
+              only: master
