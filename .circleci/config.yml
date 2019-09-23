@@ -10,7 +10,7 @@ jobs:
           command: npm i
       - run:
           name: 'Install Dependecies'
-          command: npm install firebase-tools
+          command: npm install --save-dev firebase-tools
       - run:
           name: build
           command: npm run build

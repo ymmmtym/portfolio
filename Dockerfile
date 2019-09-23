@@ -1,4 +1,9 @@
-FROM nginx:alpine
+FROM node:lts-alpine
+MAINTAINER ymmmtym
 
-COPY ["html", "/usr/share/nginx/html"]
-RUN apk update
+ENV HOSTNAME="portfolio" \
+    PS1="[\u@\h \W]# "
+RUN apk update && \
+    yarn global add @vue/cli
+
+CMD ["/bin/ash"]
