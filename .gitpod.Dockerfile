@@ -9,4 +9,4 @@ WORKDIR ${APP_PATH}
 RUN apk update && \
     yarn global add @vue/cli
 
-CMD ["yarn", "serve"]
+CMD ["/bin/ash"]
