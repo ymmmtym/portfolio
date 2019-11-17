@@ -1,12 +1,13 @@
 <template>
   <header class="mb-0 mt-5">
     <nav class="navbar n avbar-dark fixed-top">
-      <ul>
-        <li>top</li>
-        <li>このページについて</li>
-        <li>portfolio</li>
-        <li>skill</li>
-        <li>contact</li>
+      <span class="title"><a href="#top">ymmmtym's Portfolio</a></span>
+      <ul class="nav justify-content-end">
+        <li class="nav-item"><a href="#id">TOP</a></li>
+        <li class="nav-item"><a href="#about">About</a></li>
+        <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a href="#skills">Skills</a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -21,10 +22,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 nav {
-  background-color: rgba(65, 105, 255, 0.3);
-}
-h3 {
-  margin: 40px 0 0;
+  background-color: rgba(180, 185, 206, 0.3);
+  padding: 20px;
+  margin-bottom: 30px;
 }
 ul {
   list-style-type: none;
@@ -33,8 +33,13 @@ ul {
 li {
   display: inline-block;
   margin: 0 10px;
+  padding: 0 20px;
 }
 a {
-  color: #42b983;
+  color: black;
+  font: bold
+}
+.title {
+  padding: 0 20px;
 }
 </style>

@@ -1,12 +1,7 @@
 <template>
   <footer>
     <nav class="navbar navbar-dark">
-      <ul>
-        <li>&copy; ymmmtym </li>
-        <li>test1</li>
-        <li>test2</li>
-        <li>test3</li>
-      </ul>
+      <p>&copy;2019 ymmmtym</p>
     </nav>
   </footer>
 </template>
@@ -20,20 +15,11 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 nav {
-  background-color: rgba(184, 211, 230, 0.486)
+  background-color: rgba(184, 211, 230, 0.9);
+  margin-top: 50px;
 }
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
+nav p {
+  padding: 10px;
+  margin: 0;
 }
 </style>
