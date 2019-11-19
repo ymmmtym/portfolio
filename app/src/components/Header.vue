@@ -1,9 +1,9 @@
 <template>
-  <header class="mb-0 mt-5">
+  <header>
     <nav class="navbar n avbar-dark fixed-top">
       <span class="title"><a href="#top">ymmmtym's Portfolio</a></span>
       <ul class="nav justify-content-end">
-        <li class="nav-item"><a href="#id">TOP</a></li>
+        <li class="nav-item"><a href="#eyecatch">TOP</a></li>
         <li class="nav-item"><a href="#about">About</a></li>
         <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
         <li class="nav-item"><a href="#skills">Skills</a></li>
@@ -21,10 +21,12 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+header {
+  margin-top: 4rem!important;
+}
 nav {
   background-color: rgba(180, 185, 206, 0.3);
   padding: 20px;
-  margin-bottom: 30px;
 }
 ul {
   list-style-type: none;
