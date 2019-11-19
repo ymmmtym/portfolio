@@ -15,7 +15,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 nav {
-  background-color: rgba(184, 211, 230, 0.9);
+  background: linear-gradient(30deg, rgb(177, 206, 219), rgb(18, 6, 128)) fixed;
   margin-top: 50px;
 }
 nav p {
