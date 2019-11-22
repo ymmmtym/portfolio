@@ -1,5 +1,5 @@
 FROM node:lts-alpine
-LABEL maintainer "ymmmtym"
+LABEL Maintainer "ymmmtym"
 
 ENV HOSTNAME="portfolio" \
     PS1="[\u@\h \W]# " \
