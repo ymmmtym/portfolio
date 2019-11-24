@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav class="navbar n avbar-dark fixed-top">
+    <nav class="navbar navbar-dark fixed-top">
       <span class="title"><a href="#top">ymmmtym's Portfolio</a></span>
       <ul class="nav justify-content-end">
         <li class="nav-item"><a href="#eyecatch">TOP</a></li>
