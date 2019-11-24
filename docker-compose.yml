@@ -1,7 +1,7 @@
 version: '3'
 services:
     portfolio:
-        build: .
+        image: yumemo/portfolio
         container_name: portfolio
         hostname: portfolio
         tty: true
