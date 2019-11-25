@@ -14,23 +14,23 @@
         <h1 class="section-title">Portfolio</h1>
         <p>これまでに<strong>ymmmtym</strong>が作成したPortfolio一覧です。</p>
           <div class="grid">
-            <div id="portfolio-content">
+              <a href="https://keywoo.herokuapp.com" target="_blank" class="portfolio-content">
+                <img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/techblog/beamer-latex-themes/titleWithNewBackground.png" alt="sample">
+                <p class="portfolio-title">keywoo</p>
+                <p class="portfolio-description">
+                  flaskで開発した検索システムです。<br>heroku上にデプロイしています。
+                </p>
+              </a>
+            <a href="#" class="portfolio-content">
               <img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/techblog/beamer-latex-themes/titleWithNewBackground.png" alt="sample">
-              <p class="portfolio-title"><a href="https://keywoo.herokuapp.com" target="_blank">keywoo</a></p>
-              <p class="portfolio-description">
-                flaskで開発した検索システムです。<br>heroku上にデプロイしています。
-              </p>
-            </div>
-            <div id="portfolio-content">
-              <img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/techblog/beamer-latex-themes/titleWithNewBackground.png" alt="sample">
-              <p class="portfolio-title"><a href="#">Portfolio</a></p>
+              <p class="portfolio-title">Portfolio</p>
               <p class="portfolio-description">当サイトです。<br>vue.jsを使用し、firebase上にデプロイしています。</p>
-            </div>
-            <div id="portfolio-content">
-              <img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/techblog/beamer-latex-themes/titleWithNewBackground.png" alt="sample">
-              <p class="portfolio-title">Sample</p>
-              <p class="portfolio-description">This is sample text</p>
-            </div>
+            </a>
+              <a href="#" class="portfolio-content">
+                <img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/techblog/beamer-latex-themes/titleWithNewBackground.png" alt="sample">
+                <p class="portfolio-title">Sample</p>
+                <p class="portfolio-description">This is sample text</p>
+              </a>
           </div>
       </section>
 
@@ -88,6 +88,10 @@ p {
   gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+a {
+  text-decoration: none;
+  color: #42b983;
+}
 
 /* eyecatch */
 #eyecatch {
@@ -128,25 +132,33 @@ p {
 
 
 /* portfolio */
-#portfolio-content {
+.portfolio-content {
+  display: block;
   width: 345px;
-  margin: 0 auto;
+  color: black;
+  cursor: pointer;
+  transition: 0.2s;
+  box-shadow:0 0 3px rgba(57, 74, 231, 0.425);
 }
-#portfolio-content img {
-  max-width: 300px;
+.portfolio-content:hover {
+  box-shadow:0 0 5px rgb(49, 46, 201);
+}
+.portfolio-content img {
+  max-width: 345px;
   height: auto;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+.portfolio-title {
+  padding: 10px;
+  margin:0 30px;
+  font-weight: bold;
+  color: rgb(5, 5, 66);
+  border-bottom: 2px dotted #abb2f162;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+.portfolio-description {
+  padding: 20px;
+  margin-bottom: 0;
 }
-a {
-  color: #42b983;
-}
+
 
 /* skills */
 
