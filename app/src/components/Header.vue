@@ -1,13 +1,13 @@
 <template>
   <header>
     <nav class="navbar navbar-dark fixed-top">
-      <span class="title header-link"><strong><a href="#top">ymmmtym's Portfolio</a></strong></span>
+      <span class="title"><strong><a href="#top" class="header-link">ymmmtym's Portfolio</a></strong></span>
       <ul class="nav justify-content-end">
-        <li class="nav-item header-link"><a href="#eyecatch">TOP</a></li>
-        <li class="nav-item header-link"><a href="#about">About</a></li>
-        <li class="nav-item header-link"><a href="#portfolio">Portfolio</a></li>
-        <li class="nav-item header-link"><a href="#skills">Skills</a></li>
-        <li class="nav-item header-link"><a href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="header-link" href="#" v-scroll-to="'#eyecatch'">TOP</a></li>
+        <li class="nav-item"><a class="header-link" href="#" v-scroll-to="'#about'">About</a></li>
+        <li class="nav-item"><a class="header-link" href="#" v-scroll-to="'#portfolio'">Portfolio</a></li>
+        <li class="nav-item"><a class="header-link" href="#" v-scroll-to="'#skills'">Skills</a></li>
+        <li class="nav-item"><a class="header-link" href="#" v-scroll-to="'#contact'">Contact</a></li>
       </ul>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbaricon" aria-controls="navbaricon" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -44,7 +44,7 @@ ul {
 }
 li {
   display: inline-block;
-  margin: 0 10px;
+  /* margin: 0 10px; */
   padding: 20px;
 }
 .header-link:hover {
@@ -55,6 +55,7 @@ li {
 a {
   color: black;
   text-decoration: none;
+  padding: 20px
 }
 
 /* media */
