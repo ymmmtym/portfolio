@@ -16,6 +16,7 @@ Vue.use(VueScrollTo, {
   y: true
 })
 
+
 Vue.config.productionTip = false
 
 new Vue({
