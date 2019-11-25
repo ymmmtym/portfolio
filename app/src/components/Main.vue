@@ -1,7 +1,7 @@
 <template>
   <main>
-    <div class="eyecatch">
-      <h1>Welcome to ymmmtym's Portfolio</h1>
+    <div id="eyecatch">
+      <p>Welcome to ymmmtym's Portfolio</p>
     </div>
 
     <div class="container">
@@ -57,6 +57,9 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 /* common */
+section {
+  padding-bottom: 5rem;
+}
 .section_title {
   margin-bottom: 2rem;
   font-size: 3em;
@@ -64,26 +67,29 @@ export default {
   color: rgb(45, 82, 163);
   border-bottom: 3px solid rgb(106, 138, 228);
 }
-section {
-  padding-bottom: 5rem;
+.container {
+  overflow: hidden;
+}
+p {
+  word-break: keep-all;
 }
 
-
 /* eyecatch */
-.eyecatch {
+#eyecatch {
   margin-bottom: 5rem;
   width: 100vw;
   height: 85vh;
   background: linear-gradient(30deg, rgb(221, 139, 139), rgb(153, 146, 221)) fixed;
 }
-.eyecatch h1 {
+#eyecatch p {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-size: 4rem;
+  font-size: 3.5rem;
   color: rgb(250, 227, 248);
-  white-space: nowrap;
+  word-break: keep-all;
+  cursor: default;
 }
 
 /* about */
@@ -109,4 +115,10 @@ a {
 
 /* contact */
 
+/* media */
+@media screen and (min-width: 960px) {
+  #eyecatch p {
+    white-space: nowrap;
+  }
+}
 </style>
