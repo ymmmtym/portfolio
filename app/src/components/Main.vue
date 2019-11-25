@@ -65,6 +65,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+
 /* common */
 section {
   padding-bottom: 5rem;
@@ -84,9 +85,10 @@ p {
 }
 .grid {
   display: grid;
-  margin: auto;
-  gap: 10px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  grid-auto-columns: 300px;
+  grid-template-columns: repeat(auto-fit, 300px);
+  justify-content: center;
 }
 a {
   text-decoration: none;
@@ -134,7 +136,7 @@ a {
 /* portfolio */
 .portfolio-content {
   display: block;
-  width: 345px;
+  width: 300px;
   color: black;
   cursor: pointer;
   transition: 0.2s;
@@ -144,7 +146,7 @@ a {
   box-shadow:0 0 5px rgb(49, 46, 201);
 }
 .portfolio-content img {
-  max-width: 345px;
+  max-width: 300px;
   height: auto;
 }
 .portfolio-title {
