@@ -17,12 +17,14 @@
             <div id="portfolio-content">
               <img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/techblog/beamer-latex-themes/titleWithNewBackground.png" alt="sample">
               <p class="portfolio-title"><a href="https://keywoo.herokuapp.com" target="_blank">keywoo</a></p>
-              <p class="portfolio-description">flaskで開発した検索システムです。heroku上にデプロイしています。</p>
+              <p class="portfolio-description">
+                flaskで開発した検索システムです。<br>heroku上にデプロイしています。
+              </p>
             </div>
             <div id="portfolio-content">
               <img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/techblog/beamer-latex-themes/titleWithNewBackground.png" alt="sample">
               <p class="portfolio-title"><a href="#">Portfolio</a></p>
-              <p class="portfolio-description">当サイトです。vue.jsを使用し、firebase上にデプロイしています。</p>
+              <p class="portfolio-description">当サイトです。<br>vue.jsを使用し、firebase上にデプロイしています。</p>
             </div>
             <div id="portfolio-content">
               <img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/techblog/beamer-latex-themes/titleWithNewBackground.png" alt="sample">
@@ -96,6 +98,7 @@ p {
 }
 #eyecatch p {
   position: absolute;
+  font-weight: bold;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -103,7 +106,23 @@ p {
   color: rgb(250, 227, 248);
   word-break: keep-all;
   cursor: default;
+  -webkit-animation:blink 1.5s ease-in-out infinite alternate;
+  -moz-animation:blink 1.5s ease-in-out infinite alternate;
+  animation:blink 1.5s ease-in-out infinite alternate;
 }
+@-webkit-keyframes blink{
+    0% {opacity:0.2;}
+    100% {opacity:1;}
+}
+@-moz-keyframes blink{
+    0% {opacity:0.2;}
+    100% {opacity:1;}
+}
+@keyframes blink{
+    0% {opacity:0.2;}
+    100% {opacity:1;}
+}
+
 
 /* about */
 
@@ -139,4 +158,12 @@ a {
     white-space: nowrap;
   }
 }
+
+@media screen and (max-width: 960px) {
+  section {
+    padding-bottom: 2rem;
+  }
+}
+
+
 </style>
