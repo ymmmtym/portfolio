@@ -1,7 +1,7 @@
 <template>
   <header>
     <nav class="navbar navbar-dark fixed-top">
-      <span class="title"><strong><a href="#top" class="header-link">ymmmtym's Portfolio</a></strong></span>
+      <span class="title"><strong><a class="header-link" href="#" v-scroll-to="'#eyecatch'">ymmmtym's Portfolio</a></strong></span>
       <ul class="nav justify-content-end">
         <li class="nav-item"><a class="header-link" href="#" v-scroll-to="'#eyecatch'">TOP</a></li>
         <li class="nav-item"><a class="header-link" href="#" v-scroll-to="'#about'">About</a></li>
