@@ -6,27 +6,34 @@
 
     <div class="container">
       <section id="about">
-        <h1 class="section_title">About</h1>
+        <h1 class="section-title">About</h1>
         <p>このページはymmmtymのポートフォリオです。</p>
       </section>
 
       <section id="portfolio">
-        <h1 class="section_title">Portfolio</h1>
+        <h1 class="section-title">Portfolio</h1>
         <p>これまでに<strong>ymmmtym</strong>が作成したPortfolio一覧です。</p>
-        <ul>
-          <li>
-            <a href="https://keywoo.herokuapp.com" target="_blank">keywoo</a>
-            flaskで開発した検索システムです。heroku上にデプロイしています。
-          </li> 
-          <li>
-            <a href="#">Portfolio</a>
-            当サイトです。vue.jsを使用し、firebase上にデプロイしています。
-          </li>
-        </ul>
+          <div class="grid">
+            <div id="portfolio-content">
+              <img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/techblog/beamer-latex-themes/titleWithNewBackground.png" alt="sample">
+              <p class="portfolio-title"><a href="https://keywoo.herokuapp.com" target="_blank">keywoo</a></p>
+              <p class="portfolio-description">flaskで開発した検索システムです。heroku上にデプロイしています。</p>
+            </div>
+            <div id="portfolio-content">
+              <img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/techblog/beamer-latex-themes/titleWithNewBackground.png" alt="sample">
+              <p class="portfolio-title"><a href="#">Portfolio</a></p>
+              <p class="portfolio-description">当サイトです。vue.jsを使用し、firebase上にデプロイしています。</p>
+            </div>
+            <div id="portfolio-content">
+              <img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/techblog/beamer-latex-themes/titleWithNewBackground.png" alt="sample">
+              <p class="portfolio-title">Sample</p>
+              <p class="portfolio-description">This is sample text</p>
+            </div>
+          </div>
       </section>
 
       <section id="skills" >
-        <h1 class="section_title">Skills</h1>
+        <h1 class="section-title">Skills</h1>
         <h2>Skill Mapping</h2>
         <p>これまで実務で扱った技術についてのスキルマップです。</p>
         <h2>Certificates</h2>
@@ -34,7 +41,7 @@
       </section>
 
       <section id="contact">
-        <h1 class="section_title">Contact</h1>
+        <h1 class="section-title">Contact</h1>
         <p>
           当サイトをご覧いただきまして誠にありがとうございました。<br>
           少しでも興味をお持ち頂けた方は、以下のフォーム・リンクをご活用下さい。
@@ -60,7 +67,7 @@ export default {
 section {
   padding-bottom: 5rem;
 }
-.section_title {
+.section-title {
   margin-bottom: 2rem;
   font-size: 3em;
   font-family: Arial, Helvetica, sans-serif;
@@ -71,7 +78,13 @@ section {
   overflow: hidden;
 }
 p {
-  word-break: keep-all;
+  word-wrap: break-word;
+}
+.grid {
+  display: grid;
+  margin: auto;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 /* eyecatch */
@@ -96,8 +109,13 @@ p {
 
 
 /* portfolio */
-#portfolio {
-
+#portfolio-content {
+  width: 345px;
+  margin: 0 auto;
+}
+#portfolio-content img {
+  max-width: 300px;
+  height: auto;
 }
 ul {
   list-style-type: none;
