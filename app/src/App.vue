@@ -12,7 +12,6 @@ import Main from './components/Main.vue'
 import Footer from './components/Footer.vue'
 
 export default {
-  el: "#app",
   name: 'app',
   components: {
     Header,
