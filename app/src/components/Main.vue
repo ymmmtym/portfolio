@@ -48,8 +48,12 @@
           当サイトをご覧いただきまして誠にありがとうございました。<br>
           少しでも興味をお持ち頂けた方は、以下のフォーム・リンクをご活用下さい。
         </p>
+        <div class="link-icon">
+          <a href="https://github.com/ymmmtym" target="_blank"><img src="../../public/github_favicon.png" alt="github_favicon"></a>
+          <a href="https://qiita.com/ymmmtym" target="_blank"><img src="../../public/qiita_favicon.png" alt="qiita_favicon"></a>
+          <!-- <i class="fas fa-envelope"></i> -->
+        </div>
         <form action="post"></form>
-        <a href="#">Qiita</a>
       </section>
     </div>
 
@@ -165,6 +169,17 @@ a {
 /* skills */
 
 /* contact */
+.link-icon{
+  display: flex;
+  justify-content: center;
+}
+.link-icon a {
+  margin: 0 4px;
+}
+.link-icon a img {
+  width: 40px;
+  height: 40px;
+}
 
 /* media */
 @media screen and (min-width: 960px) {
