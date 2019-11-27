@@ -2,16 +2,16 @@
   <header>
     <nav class="navbar navbar-dark fixed-top">
       <span class="title"><strong><a class="header-link" href="#" v-scroll-to="'#eyecatch'">ymmmtym's Portfolio</a></strong></span>
-      <ul class="nav justify-content-end">
-        <li class="nav-item"><a class="header-link" href="#" v-scroll-to="'#eyecatch'">TOP</a></li>
-        <li class="nav-item"><a class="header-link" href="#" v-scroll-to="'#about'">About</a></li>
-        <li class="nav-item"><a class="header-link" href="#" v-scroll-to="'#portfolio'">Portfolio</a></li>
-        <li class="nav-item"><a class="header-link" href="#" v-scroll-to="'#skills'">Skills</a></li>
-        <li class="nav-item"><a class="header-link" href="#" v-scroll-to="'#contact'">Contact</a></li>
-      </ul>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbaricon" aria-controls="navbaricon" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbaricon" aria-controls="navbaricon" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
       </button>
+        <ul class="nav justify-content-end">
+          <li class="nav-item"><a class="header-link" href="#" v-scroll-to="'#eyecatch'">TOP</a></li>
+          <li class="nav-item"><a class="header-link" href="#" v-scroll-to="'#about'">About</a></li>
+          <li class="nav-item"><a class="header-link" href="#" v-scroll-to="'#portfolio'">Portfolio</a></li>
+          <li class="nav-item"><a class="header-link" href="#" v-scroll-to="'#skills'">Skills</a></li>
+          <li class="nav-item"><a class="header-link" href="#" v-scroll-to="'#contact'">Contact</a></li>
+        </ul>
     </nav>
   </header>
 </template>
@@ -20,6 +20,17 @@
 export default {
   name: 'Header'
 }
+
+$(function(){
+	$('.navbar-toggler').click(function(){
+		$(this).next('ul').slideToggle();
+  });
+  $('.nav-item').click(function(){
+    $('.nav').slideUp();
+  })
+});
+
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -29,20 +40,23 @@ header {
 }
 nav {
   background-color: rgba(180, 185, 206, 0.3);
-  padding:0 20px;
+  padding:0;
 }
 span.title {
-  padding: 20px;
+  padding: 20px 0;
 }
 .navbar-toggler {
   display: none;
-  border-color: rgba(0, 0, 0, 0)
+  border-color: rgba(0, 0, 0, 0);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: none;
 }
-ul {
+.nav ul {
   list-style-type: none;
   padding: 0;
 }
-li {
+.nav li {
   display: inline-block;
   padding: 20px;
 }
@@ -60,10 +74,11 @@ a {
 /* media */
 @media screen and (max-width: 960px) {
   nav {
-    padding: 0 12px;
+    padding: 0;
   }
   .nav {
     display: none;
+    margin: auto;
   }
   .navbar-toggler {
   display: inline;
