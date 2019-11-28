@@ -21,13 +21,21 @@ export default {
   name: 'Header'
 }
 
+var $win = $(window);
+
+$win.on('load resize', function() {
+  var windowWidth = window.innerWidth;
+  if (windowWidth < 961) {
+    $('.nav-item').click(function(){
+      $('.nav').slideUp();
+    })
+  }
+});
+
 $(function(){
 	$('.navbar-toggler').click(function(){
 		$(this).next('ul').slideToggle();
   });
-  $('.nav-item').click(function(){
-    $('.nav').slideUp();
-  })
 });
 
 
