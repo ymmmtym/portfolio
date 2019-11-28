@@ -40,6 +40,11 @@
         <p>これまで実務で扱った技術についてのスキルマップです。</p>
         <h2>Certificates</h2>
         <p>これまで取得した資格一覧です。</p>
+        <ul>
+          <li>基本情報技術者</li>
+          <li>.com Master ADVANCE	&#9733;&#9733;</li>
+          <li>Python 3 エンジニア認定基礎</li>
+        </ul>
       </section>
 
       <section id="contact">
@@ -49,11 +54,27 @@
           少しでも興味をお持ち頂けた方は、以下のフォーム・リンクをご活用下さい。
         </p>
         <div class="link-icon">
-          <a href="https://github.com/ymmmtym" target="_blank"><img src="../../public/github_favicon.png" alt="github_favicon"></a>
-          <a href="https://qiita.com/ymmmtym" target="_blank"><img src="../../public/qiita_favicon.png" alt="qiita_favicon"></a>
-          <!-- <i class="fas fa-envelope"></i> -->
+          <a href="https://github.com/ymmmtym" target="_blank"><img src="../assets/github_favicon.png" alt="github_favicon"></a>
+          <a href="https://qiita.com/ymmmtym" target="_blank"><img src="../assets/qiita_favicon.png" alt="qiita_favicon"></a>
+          <a href="#contact" class="mail"><img src="../assets/mail.png" alt="mail"></a>
         </div>
-        <form action="post"></form>
+        <form method="POST">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required>
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required>
+            </div>
+            <div>
+              <label for="textarea">Comment</label>
+              <textarea id="textarea" name="message" required></textarea>
+            </div>
+            <div>
+              <button type="submit">Send</button>
+            </div>
+        </form>
       </section>
     </div>
 
@@ -65,6 +86,12 @@
 export default {
   name: 'Main',
 }
+
+$(function(){
+	$('.mail').click(function(){
+		$('form').slideDown();
+  });
+});
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -167,18 +194,36 @@ a {
 
 
 /* skills */
+#skills ul {
+  padding: 0 24em;
+  position: relative;
+}
+
+#skills ul li {
+  color: #2d8fdd;
+  border-left: solid 6px #2d8fdd;
+  background: #f1f8ff;
+  margin-bottom: 5px;
+   line-height: 1.5;
+  padding: 0.5em;
+  list-style-type: none!important;
+}
 
 /* contact */
 .link-icon{
   display: flex;
   justify-content: center;
+  margin-bottom: 36px;
 }
-.link-icon a {
+.link-icon a, .link-icon span {
   margin: 0 4px;
 }
 .link-icon a img {
   width: 40px;
   height: 40px;
+}
+form {
+  display: none;
 }
 
 /* media */
