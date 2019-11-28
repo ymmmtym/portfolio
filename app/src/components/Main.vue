@@ -198,17 +198,17 @@ a {
 
 /* skills */
 #skills ul {
-  padding: 0 24em;
+  width: 50%;
+  margin:0 auto;
   position: relative;
+  white-space:nowrap;
 }
-
 #skills ul li {
   color: #2d8fdd;
   border-left: solid 6px #2d8fdd;
   background: #f1f8ff;
   margin-bottom: 5px;
-   line-height: 1.5;
-  padding: 0.5em;
+  line-height: 1.5;
   list-style-type: none!important;
 }
 
@@ -235,10 +235,14 @@ form {
     white-space: nowrap;
   }
 }
-
 @media screen and (max-width: 960px) {
   section {
     padding-bottom: 2rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  #skills ul {
+    width: 280px;
   }
 }
 
