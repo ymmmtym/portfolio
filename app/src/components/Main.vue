@@ -7,7 +7,10 @@
     <div class="container">
       <section id="about">
         <h1 class="section-title">About</h1>
-        <p>このページはymmmtymのポートフォリオです。</p>
+        <p>
+          このページはymmmtymのポートフォリオです。<br>
+          今までに作成した制作物や担当した業務、その過程で身につけたスキルなどをご紹介します。
+        </p>
       </section>
 
       <section id="portfolio">
@@ -15,19 +18,19 @@
         <p>これまでに<strong>ymmmtym</strong>が作成したPortfolio一覧です。</p>
           <div class="grid">
               <a href="https://keywoo.herokuapp.com" target="_blank" class="portfolio-content">
-                <img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/techblog/beamer-latex-themes/titleWithNewBackground.png" alt="sample">
+                <img src="../assets/keywoo.png" alt="sample">
                 <p class="portfolio-title">keywoo</p>
                 <p class="portfolio-description">
                   flaskで開発した検索システムです。<br>heroku上にデプロイしています。
                 </p>
               </a>
             <a href="#" class="portfolio-content">
-              <img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/techblog/beamer-latex-themes/titleWithNewBackground.png" alt="sample">
+              <img src="../assets/portfolio.png" alt="sample">
               <p class="portfolio-title">Portfolio</p>
               <p class="portfolio-description">当サイトです。<br>vue.jsを使用し、firebase上にデプロイしています。</p>
             </a>
               <a href="#" class="portfolio-content">
-                <img src="https://d2slcw3kip6qmk.cloudfront.net/marketing/techblog/beamer-latex-themes/titleWithNewBackground.png" alt="sample">
+                <img src="../assets/portfolio.png" alt="sample">
                 <p class="portfolio-title">Sample</p>
                 <p class="portfolio-description">This is sample text</p>
               </a>
