@@ -195,7 +195,18 @@ a {
 
 /* skills */
 #skills ul {
-  list-style-type: none;
+  padding: 0 24em;
+  position: relative;
+}
+
+#skills ul li {
+  color: #2d8fdd;
+  border-left: solid 6px #2d8fdd;
+  background: #f1f8ff;
+  margin-bottom: 5px;
+   line-height: 1.5;
+  padding: 0.5em;
+  list-style-type: none!important;
 }
 
 /* contact */
