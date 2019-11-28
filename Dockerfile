@@ -7,7 +7,7 @@ ENV HOSTNAME="portfolio" \
 COPY ["./app", "${APP_PATH}"]
 WORKDIR ${APP_PATH}
 RUN apk update && \
-    yarn global add @vue/cli
+    yarn
 
 EXPOSE 8080
 CMD [ "yarn", "serve" ]
