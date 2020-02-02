@@ -9,25 +9,23 @@ jobs:
   build-deploy:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v2
-      - name: Use Node.js
-        uses: actions/setup-node@v1
-        with:
-          node-version: '12.x'
+    - uses: actions/checkout@v2
+    - name: Use Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
 
     - name: Install dependencies
       run: yarn install
+      working-directory: ./app
 
     - name: Build
       run: yarn build
-      with:
-        path: ./app
+      working-directory: ./app
 
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2
       env:
         PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
         PUBLISH_BRANCH: gh-pages
-        PUBLISH_DIR: ./dist
-      with:
-        path: ./app
+        PUBLISH_DIR: ./app/dist
