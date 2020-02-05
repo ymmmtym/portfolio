@@ -3,7 +3,7 @@ LABEL Maintainer "ymmmtym"
 
 ENV HOSTNAME="portfolio" \
     PS1="[\u@\h \W]# " \
-    APP_PATH="/app"
+    APP_PATH="/root/app"
 COPY ["./app", "${APP_PATH}"]
 WORKDIR ${APP_PATH}
 RUN apk update && \
