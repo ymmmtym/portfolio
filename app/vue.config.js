@@ -1,7 +1,7 @@
 module.exports = {
   publicPath: "./",
   assetsDir: "",
-  outputDir: "dist"
+  outputDir: "dist",
   devServer: {
     host: '0.0.0.0',
     disableHostCheck: true
