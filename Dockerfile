@@ -1,4 +1,4 @@
-FROM node:lts-alpine3.10
+FROM node:12.14.1-alpine3.10
 LABEL Maintainer "ymmmtym"
 
 ENV HOSTNAME="portfolio" \
