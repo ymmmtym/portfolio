@@ -1,7 +1,7 @@
 version: '3'
 services:
     portfolio:
-        image: yumemo/portfolio
+        build: .
         container_name: portfolio
         hostname: portfolio
         tty: true
@@ -9,3 +9,4 @@ services:
             - "8080:8080"
         volumes:
             - ./app:/root/app
+            - /app/node_modeles
