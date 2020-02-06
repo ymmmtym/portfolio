@@ -7,7 +7,7 @@ ENV HOSTNAME="portfolio" \
 COPY ["./app", "${APP_PATH}"]
 WORKDIR ${APP_PATH}
 RUN apk update && \
-    yarn install
+    yarn
 
 EXPOSE 8080
 CMD [ "yarn", "serve" ]
