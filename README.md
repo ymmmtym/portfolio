@@ -1,6 +1,6 @@
 # Portfolio
 
-[![CircleCI](https://circleci.com/gh/ymmmtym/portfolio.svg?style=svg)](https://circleci.com/gh/ymmmtym/portfolio)
+[![CircleCI](https://circleci.com/gh/ymmmtym/ymmmtym.github.io.svg?style=svg)](https://circleci.com/gh/ymmmtym/ymmmtym.github.io)
 
 ## Environments
 
