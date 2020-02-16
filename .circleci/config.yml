@@ -5,7 +5,7 @@ executors:
       - image: circleci/node
 
 jobs:
-  deploy:
+  build:
     executor: default
     steps:
       - checkout
@@ -25,13 +25,22 @@ jobs:
           name: 'Deploy to Hosting'
           command: node_modules/.bin/firebase deploy --only hosting:portfolio --project "$FIREBASE_PROJECT_ID" --token "$FIREBASE_TOKEN"
           working_directory: app
+  deploy:
+    executor: default
+    steps:
+      - checkout
+      - run:
+        name: 'Deploy to Hosting'
+        command: node_modules/.bin/firebase deploy --only hosting:portfolio --project "$FIREBASE_PROJECT_ID" --token "$FIREBASE_TOKEN"
+        working_directory: app
 
 
 workflows:
   version: 2
   test:
     jobs:
-      - deploy:
+      - build:
+      - deploy: 
           filters:
             branches:
               only: production
