@@ -5,12 +5,12 @@ executors:
       - image: circleci/node
 
 jobs:
-  deploy:
+  - build:
     executor: default
     steps:
       - checkout
       - run:
-          name: yarn install
+          name: 'Install packages'
           command: yarn install
           working_directory: app
       - run:
@@ -18,20 +18,32 @@ jobs:
           command: yarn add firebase-tools
           working_directory: app
       - run:
-          name: build
+          name: 'Build'
           command: yarn build
           working_directory: app
       - run:
           name: 'Deploy to Hosting'
           command: node_modules/.bin/firebase deploy --only hosting:portfolio --project "$FIREBASE_PROJECT_ID" --token "$FIREBASE_TOKEN"
           working_directory: app
+  - deploy:
+    executor: default
+    steps:
+      - checkout
+      - run:
+        name: 'Deploy to Hosting'
+        command: node_modules/.bin/firebase deploy --only hosting:portfolio --project "$FIREBASE_PROJECT_ID" --token "$FIREBASE_TOKEN"
+        working_directory: app
 
 
 workflows:
   version: 2
-  test:
+  build_and_deploy:
     jobs:
-      - deploy:
-          filters:
-            branches:
-              only: production
+      - build:
+        filter:
+          branches:
+            ignore: master
+      - deploy: 
+        filters:
+          branches:
+            only: production
