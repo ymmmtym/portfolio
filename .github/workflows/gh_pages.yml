@@ -1,12 +1,15 @@
 name: github pages
 
-on:
+on: 
   push:
     branches:
-    - develop
+      - develop
+  pull_request:
+    branches:
+      - develop
 
 jobs:
-  build-deploy:
+  build_deploy:
     runs-on: ubuntu-18.04
     steps:
     - uses: actions/checkout@v2
@@ -32,3 +35,4 @@ jobs:
         PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
         PUBLISH_BRANCH: master
         PUBLISH_DIR: ./app/dist
+      if: github.ref == 'develop'
