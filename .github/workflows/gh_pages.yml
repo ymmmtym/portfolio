@@ -23,7 +23,7 @@ jobs:
       run: yarn build
       working-directory: ./app
 
-    - name: Add chame file
+    - name: Add cname file
       run: cp CNAME ./app/dist/
 
     - name: Deploy
