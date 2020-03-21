@@ -39,8 +39,8 @@
 
       <section id="skills" >
         <h1 class="section-title">Skills</h1>
-        <h2>Skill Mapping</h2>
-        <p>これまで実務で扱った技術についてのスキルマップです。</p>
+        <!-- <h2>Skill Mapping</h2>
+        <p>これまで実務で扱った技術についてのスキルマップです。</p> -->
         <h2>Certificates</h2>
         <p>これまで取得した資格一覧です。</p>
         <ul>
@@ -48,6 +48,8 @@
           <li>.com Master ADVANCE	&#9733;&#9733;</li>
           <li>Python 3 エンジニア認定基礎</li>
         </ul>
+        <h2>Other</h2>
+        <p><img src="https://www.codewars.com/users/ymmmtym/badges/large" alt="codewars"></p>
       </section>
 
       <section id="contact">
