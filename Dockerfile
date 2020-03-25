@@ -1,11 +1,11 @@
 FROM node:12.14.1-alpine3.10
-LABEL Maintainer "ymmmtym"
+LABEL Maintainer="ymmmtym"
 
 ENV HOSTNAME="portfolio" \
     PS1="[\u@\h \W]# " \
-    APP_PATH="/root/app"
-COPY ["./app", "${APP_PATH}"]
-WORKDIR ${APP_PATH}
+    APP="/root/app"
+COPY ["./app", "${APP}"]
+WORKDIR ${APP}
 RUN apk update && \
     yarn install
 
