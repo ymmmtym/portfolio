@@ -21,18 +21,22 @@
               <img src="../assets/keywoo.png" alt="sample">
               <p class="portfolio-title">keywoo</p>
               <p class="portfolio-description">
-                flaskで開発した検索システムです。<br>heroku上にデプロイしています。
+                使用技術: flask, heroku<br>検索エンジン
               </p>
             </a> 
             <a href="#" class="portfolio-content">
               <img src="../assets/portfolio.png" alt="sample">
               <p class="portfolio-title">Portfolio</p>
-              <p class="portfolio-description">当サイトです。<br>vue.jsを使用し、firebase上にデプロイしています。</p>
+              <p class="portfolio-description">
+                使用技術: vue.js, github pages, github actions
+              </p>
             </a>
             <a href="./engneer-tutorial" target="_blank" class="portfolio-content">
               <img src="../assets/engneer_tutorial.png" alt="engneer tutorial">
               <p class="portfolio-title">Engneer Tutorial</p>
-              <p class="portfolio-description">これまで業務で使用した技術を書き残して、リファレンスとなるサイトを作成しています(随時更新中)<br>pipのライブラリであるmkdocsを使用しました。</p>
+              <p class="portfolio-description">
+                使用技術: github actions, mkdocs<br>エンジニア初学者用チュートリアル
+              </p>
             </a>
           </div>
       </section>
@@ -61,6 +65,7 @@
         <div class="link-icon">
           <a href="https://github.com/ymmmtym" target="_blank"><img src="../assets/github_favicon.png" alt="github_favicon"></a>
           <a href="https://qiita.com/ymmmtym" target="_blank"><img src="../assets/qiita_favicon.png" alt="qiita_favicon"></a>
+          <a href="https://ymmmtym.growi.cloud/" target="_blank"><img src="https://raw.githubusercontent.com/weseek/growi/master/public/favicon.ico" alt="growi_favicon"></a>
           <a href="#contact" class="mail"><img src="../assets/mail.png" alt="mail"></a>
         </div>
         <form method="POST">
