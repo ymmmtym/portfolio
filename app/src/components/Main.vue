@@ -68,23 +68,9 @@
           <a href="https://ymmmtym.growi.cloud/" target="_blank"><img src="https://raw.githubusercontent.com/weseek/growi/master/public/favicon.ico" alt="growi_favicon"></a>
           <a href="#contact" class="mail"><img src="../assets/mail.png" alt="mail"></a>
         </div>
-        <form method="POST">
-            <div>
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" required>
-            </div>
-            <div>
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" required>
-            </div>
-            <div>
-              <label for="textarea">Comment</label>
-              <textarea id="textarea" name="message" required></textarea>
-            </div>
-            <div>
-              <button type="submit">Send</button>
-            </div>
-        </form>
+        <div class="form">
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclv-zVz_zjaUQcVsRQUmicgz_ut8__eKnvKvZWmfgsl3WSGw/viewform?embedded=true" width="100%" height="800px" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+        </div>
       </section>
     </div>
 
@@ -99,7 +85,7 @@ export default {
 
 $(function(){
 	$('.mail').click(function(){
-		$('form').slideDown();
+		$('.form').slideDown();
   });
 });
 </script>
@@ -232,7 +218,7 @@ a {
   width: 40px;
   height: 40px;
 }
-form {
+.form {
   display: none;
 }
 
