@@ -3,9 +3,11 @@ LABEL Maintainer="ymmmtym"
 
 ENV HOSTNAME="portfolio" \
     PS1="[\u@\h \W]# " \
-    APP="/root/app"
-COPY ["./app", "${APP}"]
+    APP="/opt/portfolio"
+
+COPY [".", "${APP}"]
 WORKDIR ${APP}
+
 RUN apk update && \
     yarn install
 

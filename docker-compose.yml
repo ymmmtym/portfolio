@@ -9,5 +9,5 @@ services:
         ports:
             - "8080:8080"
         volumes:
-            - ./app:/root/app
+            - .:/opt/portfolio
             - /app/node_modeles
