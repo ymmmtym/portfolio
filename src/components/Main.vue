@@ -17,11 +17,25 @@
         <h1 class="section-title">Portfolio</h1>
         <p>これまでに<strong>ymmmtym</strong>が作成したPortfolio一覧です。</p>
           <div class="grid">
+            <a href="https://github.com/ymmmtym/ansible-mgmt" target="_blank" class="portfolio-content">
+              <img src="../assets/ansible.png" alt="ansible">
+              <p class="portfolio-title">Ansible Management</p>
+              <p class="portfolio-description">
+                使用技術: ansible, github actions<br>Ansibleで複数デバイスをIaC管理
+              </p>
+            </a>
+            <a href="./engneer-tutorial" target="_blank" class="portfolio-content">
+              <img src="../assets/engneer_tutorial.png" alt="engneer tutorial">
+              <p class="portfolio-title">Engneer Tutorial</p>
+              <p class="portfolio-description">
+                使用技術: github actions, mkdocs<br>エンジニア初学者用チュートリアル
+              </p>
+            </a>
             <a href="https://keywoo.herokuapp.com" target="_blank" class="portfolio-content">
               <img src="../assets/keywoo.png" alt="sample">
               <p class="portfolio-title">keywoo</p>
               <p class="portfolio-description">
-                使用技術: flask, heroku<br>検索エンジン
+                使用技術: flask, gcp, docker<br>検索エンジン
               </p>
             </a> 
             <a href="#" class="portfolio-content">
@@ -31,11 +45,18 @@
                 使用技術: vue.js, github pages, github actions
               </p>
             </a>
-            <a href="./engneer-tutorial" target="_blank" class="portfolio-content">
-              <img src="../assets/engneer_tutorial.png" alt="engneer tutorial">
-              <p class="portfolio-title">Engneer Tutorial</p>
+            <a href="https://github.com/ymmmtym/terraform-cloud-google" class="portfolio-content">
+              <img src="../assets/terraform.jpeg" alt="terraform">
+              <p class="portfolio-title">Terrafrom</p>
               <p class="portfolio-description">
-                使用技術: github actions, mkdocs<br>エンジニア初学者用チュートリアル
+                使用技術: Terraform, Terraform Cloud, GCP<br/>Terraformで管理するGCPリソース
+              </p>
+            </a>
+            <a href="https://ymmmtym.growi.cloud/" class="portfolio-content">
+              <img src="../assets/growi.png" alt="growi">
+              <p class="portfolio-title">Growi</p>
+              <p class="portfolio-description">
+                使用技術: Markdown, Sandbox<br/>個人Wikiページ
               </p>
             </a>
           </div>
