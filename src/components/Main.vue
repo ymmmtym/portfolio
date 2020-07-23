@@ -72,6 +72,7 @@
           <li>基本情報技術者</li>
           <li>.com Master ADVANCE	&#9733;&#9733;</li>
           <li>Python 3 エンジニア認定基礎</li>
+          <li>G検定</li>
         </ul>
         <h2>Other</h2>
         <p><img src="https://www.codewars.com/users/ymmmtym/badges/large" alt="codewars"></p>
