@@ -31,7 +31,7 @@
                 使用技術: Github Actions, Mkdocs<br>エンジニア初学者用チュートリアル
               </p>
             </a>
-            <a href="https://keywoo.herokuapp.com" target="_blank" class="portfolio-content">
+            <a href="https://keywoo.tokyo/" target="_blank" class="portfolio-content">
               <img src="../assets/keywoo.png" alt="sample">
               <p class="portfolio-title">keywoo</p>
               <p class="portfolio-description">
@@ -56,7 +56,7 @@
               <img src="../assets/growi.png" alt="growi">
               <p class="portfolio-title">Growi</p>
               <p class="portfolio-description">
-                使用技術: Markdown, Sandbox<br/>個人Wikiページ
+                使用技術: Markdown, Github Actions, Sandbox<br/>個人Wikiページ
               </p>
             </a>
           </div>
@@ -70,9 +70,10 @@
         <p>これまで取得した資格一覧です。</p>
         <ul>
           <li>基本情報技術者</li>
-          <li>.com Master ADVANCE	&#9733;&#9733;</li>
+          <li>LPIC Level 1</li>
           <li>Python 3 エンジニア認定基礎</li>
-          <li>G検定</li>
+          <li>JDLA Deep Learning for GENERAL(G検定)</li>
+          <li>.com Master ADVANCE	&#9733;&#9733;</li>
         </ul>
         <h2>Other</h2>
         <p><img src="https://www.codewars.com/users/ymmmtym/badges/large" alt="codewars"></p>
@@ -85,9 +86,9 @@
           少しでも興味をお持ち頂けた方は、以下のフォーム・リンクをご活用下さい。
         </p>
         <div class="link-icon">
-          <a href="https://github.com/ymmmtym" target="_blank"><img src="../assets/github_favicon.png" alt="github_favicon"></a>
-          <a href="https://qiita.com/ymmmtym" target="_blank"><img src="../assets/qiita_favicon.png" alt="qiita_favicon"></a>
-          <a href="https://ymmmtym.growi.cloud/" target="_blank"><img src="https://raw.githubusercontent.com/weseek/growi/master/public/favicon.ico" alt="growi_favicon"></a>
+          <a href="https://github.com/ymmmtym" target="_blank"><img src="../assets/github_favicon.png" alt="github favicon"></a>
+          <a href="https://qiita.com/ymmmtym" target="_blank"><img src="../assets/qiita_favicon.png" alt="qiita favicon"></a>
+          <a href="https://scrapbox.io/ymmmtym/" target="_blank"><img src="../assets/scrapbox_favicon.png" alt="scrapbox favicon"></a>
           <a href="#contact" class="mail"><img src="../assets/mail.png" alt="mail"></a>
         </div>
         <div class="form">
