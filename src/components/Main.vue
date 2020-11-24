@@ -1,21 +1,21 @@
 <template>
   <main>
     <div id="eyecatch">
-      <p>Welcome to ymmmtym's Portfolio</p>
+      <p>Welcome to yumenomatayume's Portfolio</p>
     </div>
 
     <div class="container">
       <section id="about">
         <h1 class="section-title">About</h1>
         <p>
-          このページはymmmtymのポートフォリオです。<br>
+          このページはyumenomatayumeのポートフォリオです。<br>
           今までに作成した制作物や担当した業務、その過程で身につけたスキルなどをご紹介します。
         </p>
       </section>
 
       <section id="portfolio">
         <h1 class="section-title">Portfolio</h1>
-        <p>これまでに<strong>ymmmtym</strong>が作成したPortfolio一覧です。</p>
+        <p>これまでに作成したPortfolio一覧です。</p>
           <div class="grid">
             <a href="https://github.com/ymmmtym/ansible-mgmt" target="_blank" class="portfolio-content">
               <img src="../assets/ansible.png" alt="ansible">
@@ -64,8 +64,6 @@
 
       <section id="skills" >
         <h1 class="section-title">Skills</h1>
-        <!-- <h2>Skill Mapping</h2>
-        <p>これまで実務で扱った技術についてのスキルマップです。</p> -->
         <h2>Certificates</h2>
         <p>これまで取得した資格一覧です。</p>
         <ul>
@@ -87,8 +85,8 @@
         </p>
         <div class="link-icon">
           <a href="https://github.com/ymmmtym" target="_blank"><img src="../assets/github_favicon.png" alt="github favicon"></a>
-          <a href="https://qiita.com/ymmmtym" target="_blank"><img src="../assets/qiita_favicon.png" alt="qiita favicon"></a>
-          <a href="https://scrapbox.io/ymmmtym/" target="_blank"><img src="../assets/scrapbox_favicon.png" alt="scrapbox favicon"></a>
+          <a href="https://qiita.com/yumenomatayume" target="_blank"><img src="../assets/qiita_favicon.png" alt="qiita favicon"></a>
+          <a href="https://scrapbox.io/yumenomatayume/" target="_blank"><img src="../assets/scrapbox_favicon.png" alt="scrapbox favicon"></a>
           <a href="#contact" class="mail"><img src="../assets/mail.png" alt="mail"></a>
         </div>
         <div class="form">
