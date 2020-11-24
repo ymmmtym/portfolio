@@ -1,7 +1,7 @@
 <template>
   <header>
     <nav class="navbar navbar-dark fixed-top">
-      <span class="title"><strong><a class="header-link" href="#" v-scroll-to="'#eyecatch'">ymmmtym's Portfolio</a></strong></span>
+      <span class="title"><strong><a class="header-link" href="#" v-scroll-to="'#eyecatch'">yumenomatayume's Portfolio</a></strong></span>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbaricon" aria-controls="navbaricon" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
       </button>
