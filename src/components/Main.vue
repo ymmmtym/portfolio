@@ -64,7 +64,7 @@
 
       <section id="skills" >
         <h1 class="section-title">Skills</h1>
-        <h2>Certificates</h2>
+        <h2>Certification</h2>
         <p>これまで取得した資格一覧です。</p>
         <ul>
           <li>基本情報技術者</li>
