@@ -21,6 +21,10 @@ jobs:
     - name: Install dependencies
       run: yarn install
 
+    - name: Fix vue-adsense
+      run: |
+        sed -i -e "s/module.exports\ =\ VueAdsense/export default VueAdsense/g" node_modules/vue-adsense/main.js
+
     - name: Build
       run: yarn build
 
