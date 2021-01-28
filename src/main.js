@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import App from './App.vue'
 import VueScrollTo from 'vue-scrollto'
+import VueAdsense from 'vue-adsense'
+
+Vue.component('adsense', VueAdsense)
  
 Vue.use(VueScrollTo, {
   container: "body",
@@ -15,7 +18,6 @@ Vue.use(VueScrollTo, {
   x: false,
   y: true
 })
-
 
 Vue.config.productionTip = false
 
