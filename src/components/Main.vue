@@ -75,7 +75,7 @@
           <li>.com Master ADVANCE	&#9733;&#9733;</li>
         </ul>
         <h2>Other</h2>
-        <p><img src="https://www.codewars.com/users/ymmmtym/badges/large" alt="codewars"></p>
+        <p><img src="https://www.codewars.com/users/yumenomatayume/badges/large" alt="codewars"></p>
       </section>
 
       <section id="contact">
