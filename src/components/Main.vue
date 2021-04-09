@@ -8,7 +8,7 @@
       <section id="about">
         <h1 class="section-title">About</h1>
         <p>
-          このページはyumenomatayumeのポートフォリオです。<br>
+          このページはエンジニアであるyumenomatayumeのポートフォリオです。<br>
           今までに作成した制作物や担当した業務、その過程で身につけたスキルなどをご紹介します。
         </p>
       </section>
@@ -21,21 +21,21 @@
               <img src="../assets/ansible.png" alt="ansible">
               <p class="portfolio-title">Ansible Management</p>
               <p class="portfolio-description">
-                使用技術: Ansible, Github Actions<br>Ansibleで複数デバイスをIaC管理
+                使用技術: Ansible, Github Actions<br>MacやLinuxをIaCで管理
               </p>
             </a>
             <a href="./engneer-tutorial" target="_blank" class="portfolio-content">
               <img src="../assets/engneer_tutorial.png" alt="engneer tutorial">
               <p class="portfolio-title">Engneer Tutorial</p>
               <p class="portfolio-description">
-                使用技術: Github Actions, Mkdocs<br>エンジニア初学者用チュートリアル
+                使用技術: Github Actions, Mkdocs<br>エンジニア初学者用チュートリアル(作成中)
               </p>
             </a>
             <a href="https://keywoo.tokyo/" target="_blank" class="portfolio-content">
               <img src="../assets/keywoo.png" alt="sample">
               <p class="portfolio-title">keywoo</p>
               <p class="portfolio-description">
-                使用技術: Flask, GCP, Docker<br>検索エンジン
+                使用技術: Flask, GCP, Docker<br>複数キーワードの検索ツール
               </p>
             </a> 
             <a href="#" class="portfolio-content">
@@ -49,14 +49,14 @@
               <img src="../assets/terraform.jpeg" alt="terraform">
               <p class="portfolio-title">Terrafrom</p>
               <p class="portfolio-description">
-                使用技術: Terraform, Terraform Cloud, GCP<br/>Terraformで管理するGCPリソース
+                使用技術: Terraform, Terraform Cloud, GCP<br/>GCPリソースをTerraformで管理
               </p>
             </a>
             <a href="https://ymmmtym.growi.cloud/" class="portfolio-content">
               <img src="../assets/growi.png" alt="growi">
               <p class="portfolio-title">Growi</p>
               <p class="portfolio-description">
-                使用技術: Markdown, Github Actions, Sandbox<br/>個人Wikiページ
+                使用技術: Markdown, Github Actions, Sandbox<br/>個人Wikiページ(Scrapboxに移行中)
               </p>
             </a>
           </div>
@@ -69,12 +69,13 @@
         <ul>
           <li>基本情報技術者</li>
           <li>LPIC Level 1</li>
+          <li>CCNA</li>
           <li>Python 3 エンジニア認定基礎</li>
           <li>JDLA Deep Learning for GENERAL(G検定)</li>
           <li>.com Master ADVANCE	&#9733;&#9733;</li>
         </ul>
         <h2>Other</h2>
-        <p><img src="https://www.codewars.com/users/ymmmtym/badges/large" alt="codewars"></p>
+        <p><img src="https://www.codewars.com/users/yumenomatayume/badges/large" alt="codewars"></p>
       </section>
 
       <section id="contact">
