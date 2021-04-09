@@ -69,6 +69,7 @@
         <ul>
           <li>基本情報技術者</li>
           <li>LPIC Level 1</li>
+          <li>CCNA</li>
           <li>Python 3 エンジニア認定基礎</li>
           <li>JDLA Deep Learning for GENERAL(G検定)</li>
           <li>.com Master ADVANCE	&#9733;&#9733;</li>
