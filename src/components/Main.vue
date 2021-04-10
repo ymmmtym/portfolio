@@ -74,6 +74,8 @@
           <li>JDLA Deep Learning for GENERAL(G検定)</li>
           <li>.com Master ADVANCE	&#9733;&#9733;</li>
         </ul>
+        <h2>StackShare</h2>
+        <a frameborder="0" data-theme="light" data-layers="1,2,3,4" data-stack-embed="true" href="https://embed.stackshare.io/stacks/embed/d8f4f3c9a23a828b9b8c383fc75c82"></a>
         <h2>Other</h2>
         <p><img src="https://www.codewars.com/users/yumenomatayume/badges/large" alt="codewars"></p>
       </section>
