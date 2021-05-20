@@ -8,7 +8,7 @@
       <section id="about">
         <h1 class="section-title">About</h1>
         <p>
-          このページはエンジニアであるyumenomatayumeのポートフォリオです。<br>
+          このページはエンジニアであるyumenomatayumeのポートフォリオです。<br />
           今までに作成した制作物や担当した業務、その過程で身につけたスキルなどをご紹介します。
         </p>
       </section>
@@ -18,45 +18,47 @@
         <p>これまでに作成したPortfolio一覧です。</p>
           <div class="grid">
             <a href="https://github.com/ymmmtym/ansible-mgmt" target="_blank" class="portfolio-content">
-              <img src="../assets/ansible.png" alt="ansible">
+              <img src="../assets/ansible.png" alt="ansible" />
               <p class="portfolio-title">Ansible Management</p>
               <p class="portfolio-description">
-                使用技術: Ansible, Github Actions<br>MacやLinuxをIaCで管理
+                <b>使用技術: Ansible, Github Actions</b><br />MacやLinuxの設定をコードで管理しています。
               </p>
             </a>
-            <a href="./engneer-tutorial" target="_blank" class="portfolio-content">
-              <img src="../assets/engneer_tutorial.png" alt="engneer tutorial">
-              <p class="portfolio-title">Engneer Tutorial</p>
+            <a href="https://ymmmtym.hateblo.jp/" target="_blank" class="portfolio-content">
+              <img src="../assets/hatenablog.png" alt="hatena blog" />
+              <p class="portfolio-title">はてなブログ</p>
               <p class="portfolio-description">
-                使用技術: Github Actions, Mkdocs<br>エンジニア初学者用チュートリアル(作成中)
+                <b>使用技術: Github Actions, Markdown</b><br />はてなブログです。push-to-hatenablogを使用してGitHubで記事管理しています。
               </p>
             </a>
             <a href="https://keywoo.tokyo/" target="_blank" class="portfolio-content">
-              <img src="../assets/keywoo.png" alt="sample">
+              <img src="../assets/keywoo.png" alt="keywoo" />
               <p class="portfolio-title">keywoo</p>
               <p class="portfolio-description">
-                使用技術: Flask, GCP, Docker<br>複数キーワードの検索ツール
+                <b>使用技術: Flask, GCP, Docker, GitHub Actions</b><br />複数キーワードのWeb検索ツールです。FlaskでGCP上にデプロイしています。
               </p>
             </a> 
             <a href="#" class="portfolio-content">
-              <img src="../assets/portfolio.png" alt="sample">
+              <img src="../assets/portfolio.png" alt="portfolio" />
               <p class="portfolio-title">Portfolio</p>
               <p class="portfolio-description">
-                使用技術: Vue.js, Github Actions, Github Pages
+                <b>使用技術: Vue.js, Github Actions, Github Pages</b><br />
+                本ページになります。
               </p>
             </a>
             <a href="https://github.com/ymmmtym/terraform-cloud-google" class="portfolio-content">
-              <img src="../assets/terraform.jpeg" alt="terraform">
+              <img src="../assets/terraform.jpeg" alt="terraform" />
               <p class="portfolio-title">Terrafrom</p>
               <p class="portfolio-description">
-                使用技術: Terraform, Terraform Cloud, GCP<br/>GCPリソースをTerraformで管理
+                <b>使用技術: Terraform, Terraform Cloud, GCP</b><br/>
+                GCPやOCIのリソースをTerraformで管理しています。
               </p>
             </a>
-            <a href="https://ymmmtym.growi.cloud/" class="portfolio-content">
-              <img src="../assets/growi.png" alt="growi">
-              <p class="portfolio-title">Growi</p>
+            <a href="https://scrapbox.io/yumenomatayume/" class="portfolio-content">
+              <img src="../assets/scrapbox_favicon.png" alt="scrapbox" />
+              <p class="portfolio-title">Scrapbox</p>
               <p class="portfolio-description">
-                使用技術: Markdown, Github Actions, Sandbox<br/>個人Wikiページ(Scrapboxに移行中)
+                個人Wikiページ
               </p>
             </a>
           </div>
@@ -69,28 +71,29 @@
         <ul>
           <li>基本情報技術者</li>
           <li>LPIC Level 1</li>
-          <li>CCNA</li>
+          <li>CCNA 200-301</li>
           <li>Python 3 エンジニア認定基礎</li>
           <li>JDLA Deep Learning for GENERAL(G検定)</li>
           <li>.com Master ADVANCE	&#9733;&#9733;</li>
         </ul>
         <h2>StackShare</h2>
+        <p>業務で使用したスキル一覧です。</p>
         <a frameborder="0" data-theme="light" data-layers="1,2,3,4" data-stack-embed="true" href="https://embed.stackshare.io/stacks/embed/d8f4f3c9a23a828b9b8c383fc75c82"></a>
         <h2>Other</h2>
-        <p><img src="https://www.codewars.com/users/yumenomatayume/badges/large" alt="codewars"></p>
+        <p><img src="https://www.codewars.com/users/yumenomatayume/badges/large" alt="codewars" /></p>
       </section>
 
       <section id="contact">
         <h1 class="section-title">Contact</h1>
         <p>
-          当サイトをご覧いただきまして誠にありがとうございました。<br>
+          当サイトをご覧いただきまして誠にありがとうございました。<br />
           少しでも興味をお持ち頂けた方は、以下のフォーム・リンクをご活用下さい。
         </p>
         <div class="link-icon">
-          <a href="https://github.com/ymmmtym" target="_blank"><img src="../assets/github_favicon.png" alt="github favicon"></a>
-          <a href="https://qiita.com/yumenomatayume" target="_blank"><img src="../assets/qiita_favicon.png" alt="qiita favicon"></a>
-          <a href="https://scrapbox.io/yumenomatayume/" target="_blank"><img src="../assets/scrapbox_favicon.png" alt="scrapbox favicon"></a>
-          <a href="#contact" class="mail"><img src="../assets/mail.png" alt="mail"></a>
+          <a href="https://github.com/ymmmtym" target="_blank"><img src="../assets/github_favicon.png" alt="github favicon" /></a>
+          <a href="https://qiita.com/yumenomatayume" target="_blank"><img src="../assets/qiita_favicon.png" alt="qiita favicon" /></a>
+          <a href="https://scrapbox.io/yumenomatayume/" target="_blank"><img src="../assets/scrapbox_favicon.png" alt="scrapbox favicon" /></a>
+          <a href="#contact" class="mail"><img src="../assets/mail.png" alt="mail" /></a>
         </div>
         <div class="form">
           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSclv-zVz_zjaUQcVsRQUmicgz_ut8__eKnvKvZWmfgsl3WSGw/viewform?embedded=true" width="100%" height="800px" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>

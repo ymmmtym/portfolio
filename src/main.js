@@ -4,7 +4,7 @@ import VueScrollTo from 'vue-scrollto'
 import VueAdsense from 'vue-adsense'
 
 Vue.component('adsense', VueAdsense)
- 
+
 Vue.use(VueScrollTo, {
   container: "body",
   duration: 300,

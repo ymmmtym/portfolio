@@ -1,6 +1,6 @@
 module.exports = {
   publicPath: "./",
-  assetsDir: "",
+  assetsDir: "./",
   outputDir: "dist",
   devServer: {
     host: '0.0.0.0',
