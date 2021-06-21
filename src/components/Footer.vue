@@ -1,7 +1,7 @@
 <template>
   <footer>
     <nav class="navbar navbar-dark">
-      <p>&copy;2020 yumenomatayume</p>
+      <p>&copy;2021 yumenomatayume</p>
     </nav>
   </footer>
 </template>
