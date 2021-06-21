@@ -17,11 +17,11 @@
         <h1 class="section-title">Portfolio</h1>
         <p>これまでに作成したPortfolio一覧です。</p>
           <div class="grid">
-            <a href="https://github.com/ymmmtym/ansible-mgmt" target="_blank" class="portfolio-content">
+            <a href="https://github.com/ymmmtym/home" target="_blank" class="portfolio-content">
               <img src="../assets/ansible.png" alt="ansible" />
-              <p class="portfolio-title">Ansible Management</p>
+              <p class="portfolio-title">Home</p>
               <p class="portfolio-description">
-                <b>使用技術: Ansible, Github Actions</b><br />MacやLinuxの設定をコードで管理しています。
+                <b>使用技術: Ansible, Terraform, Packer, ESXi, Kubernetes, Github Actions</b><br />自宅Nuc環境をコード管理しています。
               </p>
             </a>
             <a href="https://ymmmtym.hateblo.jp/" target="_blank" class="portfolio-content">
