@@ -1,4 +1,4 @@
-FROM node:14-slim as build
+FROM node:19-slim as build
 
 WORKDIR /app
 COPY package.json yarn.lock ./
@@ -9,7 +9,7 @@ COPY . .
 RUN yarn build
 
 
-FROM node:14-slim as node_modules
+FROM node:19-slim as node_modules
 
 WORKDIR /app
 COPY package.json yarn.lock ./
