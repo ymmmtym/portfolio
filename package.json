@@ -20,7 +20,7 @@
     "@vue/cli-plugin-eslint": "^5.0.0",
     "@vue/cli-service": "^5.0.0",
     "eslint": "^7.26.0",
-    "eslint-plugin-vue": "^7.9.0"
+    "eslint-plugin-vue": "^10.0.0"
   },
   "postcss": {
     "plugins": {
