@@ -6,7 +6,7 @@ workflows:
     '.github/workflows/gh_pages.yml':
         - 'actions/checkout@v7'
         - 'actions/setup-node@v7'
-        - 'peaceiris/actions-gh-pages@v2'
+        - 'peaceiris/actions-gh-pages@v4'
     '.github/workflows/verify-actions-lock.yml':
         - 'actions/checkout@v7.0.1'
 dependencies:
@@ -25,8 +25,8 @@ dependencies:
         commit: 'sha1-949feb2413d6458794dcd2491c4babbbce0c15c1'
         owner_id: 44036562
         repo_id: 189476904
-    'peaceiris/actions-gh-pages@v2':
-        ref: 'v2'
-        commit: 'sha1-45b43ab25725682861f953edbb911fe7f402a5b6'
+    'peaceiris/actions-gh-pages@v4':
+        ref: 'v4'
+        commit: 'sha1-84c30a85c19949d7eee79c4ff27748b70285e453'
         owner_id: 30958501
         repo_id: 187915200
